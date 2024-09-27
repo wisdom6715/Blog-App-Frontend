@@ -15,7 +15,7 @@ export default function AddPost(){
         
         try {
             // Make the API request to save the new post
-            const response = await axios.post('http://localhost:3000/api/posts', newPost);
+            const response = await axios.post('https://blog-app-backend-3v2j.onrender.com/api/posts', newPost);
             console.log(response.data);
     
             // After successful response, update the state to add the new post

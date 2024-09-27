@@ -35,3 +35,56 @@ body{
     border-bottom: .1rem solid grey;
     padding-bottom: 1.5rem;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 767px) {
+  /* CSS rules for tablets (portrait) */
+    .allPostContainer{
+        width: 100%;
+        /* padding-top: 2rem; */
+        /* padding-bottom: 2rem; */
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .elementsContainer{
+        margin-left: .5rem; margin-right: .5rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 80%;
+        height: 40vh;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules for tablets (landscape) */
+  .allPostContainer{
+    width: 85%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px){
+  /* CSS rules for laptops */
+  .allPostContainer{
+    width: 70%;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+}

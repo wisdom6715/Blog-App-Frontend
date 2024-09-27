@@ -8,7 +8,7 @@ function App() {
   useEffect(()=>{
     const fetchPost = async() =>{
       try{
-        const response = await axios.get('http://localhost:3000')
+        const response = await axios.get('https://blog-app-backend-3v2j.onrender.com/')
         console.log(response.data)
         addPosts(response.data)
       } catch(err){
@@ -23,7 +23,7 @@ function App() {
   const handleDelete = async (id) => {
     try {
       // Replace the :id in the URL with the actual post ID
-      const response = await axios.delete(`http://localhost:3000/api/posts/delete/${id}`);
+      const response = await axios.delete(`hhttps://blog-app-backend-3v2j.onrender.com/api/posts/delete/${id}`);
       const updatedPosts = posts.filter((post) => post.id !== id);
        addPosts(updatedPosts);
        console.log(id, 'is clicked');
@@ -34,7 +34,7 @@ function App() {
     
   };
   const handleEdit = async(id) => {
-    const response = await axios.patch(`http://localhost:3000/api/posts/update/${id}`)
+    const response = await axios.patch(`https://blog-app-backend-3v2j.onrender.com/api/posts/update/${id}`)
     console.log(id, 'is clicked');
     navigate(`/update/post/${id}`)
   }

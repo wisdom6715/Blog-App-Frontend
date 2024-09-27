@@ -16,7 +16,7 @@ export default function AddPost() {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get("http://localhost:3000");
+        const response = await axios.get("https://blog-app-backend-3v2j.onrender.com/");
         console.log(response.data);
         // setUpdatedPosts(response.data);
         console.log("yeah working....");
@@ -43,7 +43,7 @@ export default function AddPost() {
     try {
       // Make the API request to update the post
       const response = await axios.patch(
-        `http://localhost:3000/api/posts/update/${id}`,
+        `https://blog-app-backend-3v2j.onrender.com/api/posts/update/${id}`,
         updatePost
       );
       console.log(response.data);
