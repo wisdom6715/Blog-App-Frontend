@@ -23,7 +23,7 @@ function App() {
   const handleDelete = async (id) => {
     try {
       // Replace the :id in the URL with the actual post ID
-      const response = await axios.delete(`hhttps://blog-app-backend-3v2j.onrender.com/api/posts/delete/${id}`);
+      const response = await axios.delete(`https://blog-app-backend-3v2j.onrender.com/api/posts/delete/${id}`);
       const updatedPosts = posts.filter((post) => post.id !== id);
        addPosts(updatedPosts);
        console.log(id, 'is clicked');
