@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import UpdatePost from '../Components/UpdatePost.jsx';
 import { createBrowserRouter, RouterProvider, Routes } from 'react-router-dom';
 import App from './App.jsx'
-import AddPost from '../Components/Addpost.jsx';
+import AddPost from '../Components/AddPost.jsx';
 
 
 const router=createBrowserRouter([
