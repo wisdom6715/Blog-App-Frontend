@@ -56,8 +56,8 @@ function App() {
                   <p>{post.content}</p>
                   <p>{post.author}</p>
                   <div>
-                    <button onClick={() => handleEdit(post.id)}>Edit</button>
-                    <button onClick={() => handleDelete(post.id)}>Delete</button>
+                    <button className={style.editButton} onClick={() => handleEdit(post.id)}>Edit</button>
+                    <button className={style.deleteButton} onClick={() => handleDelete(post.id)}>Delete</button>
                   </div>
                 </div>
               ))}

@@ -35,6 +35,14 @@ body{
     border-bottom: .1rem solid grey;
     padding-bottom: 1.5rem;
 }
+.deleteButton{
+    color: white;
+    background-color: red;
+}
+.editButton{
+    color: white;
+    background-color: blue;
+}
 form{
     display: flex;
     flex-direction: column;
